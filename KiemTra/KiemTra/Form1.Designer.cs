@@ -30,9 +30,10 @@ namespace KiemTra
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.textboxusername = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtMatkhau = new System.Windows.Forms.TextBox();
+            this.textboxmatkhau = new System.Windows.Forms.TextBox();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -45,38 +46,50 @@ namespace KiemTra
             this.label1.TabIndex = 0;
             this.label1.Text = "Username";
             // 
-            // txtUsername
+            // textboxusername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(248, 82);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(357, 22);
-            this.txtUsername.TabIndex = 1;
+            this.textboxusername.Location = new System.Drawing.Point(248, 82);
+            this.textboxusername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textboxusername.Name = "textboxusername";
+            this.textboxusername.Size = new System.Drawing.Size(357, 22);
+            this.textboxusername.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(94, 139);
+            this.label2.Location = new System.Drawing.Point(93, 139);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 17);
+            this.label2.Size = new System.Drawing.Size(69, 17);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Mật khẩu";
+            this.label2.Text = "Password";
             // 
-            // txtMatkhau
+            // textboxmatkhau
             // 
-            this.txtMatkhau.Location = new System.Drawing.Point(248, 139);
-            this.txtMatkhau.Name = "txtMatkhau";
-            this.txtMatkhau.Size = new System.Drawing.Size(357, 22);
-            this.txtMatkhau.TabIndex = 3;
+            this.textboxmatkhau.Location = new System.Drawing.Point(248, 139);
+            this.textboxmatkhau.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textboxmatkhau.Name = "textboxmatkhau";
+            this.textboxmatkhau.Size = new System.Drawing.Size(357, 22);
+            this.textboxmatkhau.TabIndex = 3;
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.Location = new System.Drawing.Point(325, 228);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(100, 28);
+            this.btnLogin.TabIndex = 4;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.txtMatkhau);
+            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.textboxmatkhau);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.textboxusername);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
@@ -89,9 +102,10 @@ namespace KiemTra
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox textboxusername;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtMatkhau;
+        private System.Windows.Forms.TextBox textboxmatkhau;
+        private System.Windows.Forms.Button btnLogin;
     }
 }
 
