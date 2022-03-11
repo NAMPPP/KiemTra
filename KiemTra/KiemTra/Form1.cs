@@ -16,5 +16,16 @@ namespace KiemTra
         {
             InitializeComponent();
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            String username = textboxusername.Text;
+            String password = textboxmatkhau.Text;
+            if (username == "admin" && password == "admin")
+            {
+                Form2 form2 = new Form2();
+                form2.Show();
+            }
+        }
     }
 }
